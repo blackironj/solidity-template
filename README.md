@@ -12,12 +12,11 @@ Try running some of the following tasks:
   - https://www.alchemy.com/
 - Etherscan API key
   - https://etherscan.io/
-- Install yarn & Set yarn berry
-```sh
-npm install -g yarn
-yarn set version berry
-yarn install
-```
+- Install yarn & dependencies
+  ```sh
+  npm install -g yarn
+  yarn install
+  ```
 
 ## Quick start
 - compile contract
