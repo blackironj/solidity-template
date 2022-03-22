@@ -1,0 +1,22 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain-types
+
+yarn-error.log
+
+.DS_Store
+
+#Hardhat files
+cache
+artifacts
+
+.pnp.*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
