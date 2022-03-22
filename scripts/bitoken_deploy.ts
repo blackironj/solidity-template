@@ -7,7 +7,7 @@ async function main() {
 
   await biToken.deployed();
 
-  console.log('WorldPurpose deployed to:', biToken.address);
+  console.log('BIToken deployed to:', biToken.address);
 }
 
 main()
