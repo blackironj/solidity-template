@@ -4,6 +4,7 @@ import '@typechain/hardhat'
 import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle';
 import '@nomiclabs/hardhat-solhint';
+import '@nomiclabs/hardhat-etherscan';
 
 import { task, HardhatUserConfig } from 'hardhat/config';
 
@@ -30,6 +31,9 @@ const config: HardhatUserConfig = {
       url: process.env.ROPSTEN_RUL || '',
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
 };
 
