@@ -7,7 +7,7 @@
     "clean": "npx hardhat clean",
     "chain": "npx hardhat node",
     "deploy": "npx hardhat run --network localhost scripts/deploy.ts",
-    "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.ts",
+    "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
     "test": "npx hardhat test"
   },
   "keywords": [],
@@ -23,6 +23,7 @@
     "@types/mocha": "^9.1.0",
     "@types/node": "^17.0.21",
     "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
     "hardhat": "^2.9.1",
