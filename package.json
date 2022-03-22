@@ -7,8 +7,8 @@
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "chain": "npx hardhat node",
-    "deploy": "npx hardhat run --network localhost scripts/deploy.ts",
-    "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.ts",
+    "deploy": "npx hardhat run --network localhost",
+    "deploy:ropsten": "npx hardhat run --network ropsten",
     "verify:ropsten": "npx hardhat verify --network ropsten",
     "test": "npx hardhat test"
   },
