@@ -10,6 +10,7 @@
     "deploy": "npx hardhat run --network localhost",
     "deploy:ropsten": "npx hardhat run --network ropsten",
     "deploy:mumbai": "npx hardhat run --network mumbai",
+    "deploy:baobab": "npx hardhat run --network baobab",
     "verify:ropsten": "npx hardhat verify --network ropsten",
     "test": "npx hardhat test"
   },

@@ -27,6 +27,7 @@ yarn compile
   - create `.env` file and write down env value
     ```
     ROPSTEN_URL=https://eth-ropsten.alchemyapi.io/v2/YOUR_API_KEY
+    # you can add more network URL
     PRIVATE_KEY=YOUR_BURNABLE_WALLET_PRIVATE_KEY
     ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY
     ```

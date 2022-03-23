@@ -37,6 +37,16 @@ const config: HardhatUserConfig = {
       url: process.env.MUMBAI_URL || '',
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    //bsc testnet
+    bsctest:{
+      url: process.env.BSC_TEST_URL || '',
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    //klaytn testnet
+    baobab:{
+      url: process.env.BAOBAB_URL || '',
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    }
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
