@@ -2344,6 +2344,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base64-sol@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "base64-sol@npm:1.1.0"
+  checksum: 9bea828af71e6adcf7c841cf0001e03bd1eae8cc1aef86daedb36f04117b2a626ac23631f700d56a24515f88c2021d7ebdbee4608369f66c53e51c0b4b39ee47
+  languageName: node
+  linkType: hard
+
 "base@npm:^0.11.1":
   version: 0.11.2
   resolution: "base@npm:0.11.2"
@@ -11500,6 +11507,7 @@ __metadata:
     "@types/chai": ^4.3.0
     "@types/mocha": ^9.1.0
     "@types/node": ^17.0.21
+    base64-sol: ^1.1.0
     chai: ^4.3.6
     dotenv: ^16.0.0
     ethereum-waffle: ^3.0.0
