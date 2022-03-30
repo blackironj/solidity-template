@@ -1,0 +1,20 @@
+import {ethers, upgrades} from 'hardhat';
+
+const SLICES = 8;
+
+async function main() {
+  const Pizza = await ethers.getContractFactory('Pizza');
+  const pizza = await upgrades.deployProxy(Pizza, [SLICES], {
+    initializer: 'initialize',
+  })
+  await pizza.deployed();
+
+  console.log('Pizza deployed to:', pizza.address);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });

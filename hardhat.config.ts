@@ -1,10 +1,11 @@
 require('dotenv').config();
 
-import '@typechain/hardhat'
+import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle';
 import '@nomiclabs/hardhat-solhint';
 import '@nomiclabs/hardhat-etherscan';
+import '@openzeppelin/hardhat-upgrades';
 
 import { task, HardhatUserConfig } from 'hardhat/config';
 
@@ -49,7 +50,14 @@ const config: HardhatUserConfig = {
     }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: {
+      //ethereum
+      ropsten: process.env.ETHERSCAN_API_KEY,
+      rinkeby: process.env.ETHERSCAN_API_KEY,
+
+      //polygon
+      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+    }
   },
 };
 
