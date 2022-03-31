@@ -4,12 +4,12 @@ import {ethers, upgrades} from 'hardhat';
 const PROXY = process.env.PROXY_ADDRESS || ''
 
 async function main() {
-    const PizzaV2 = await ethers.getContractFactory('PizzaV2');
+    const UpgradeableTokenV2 = await ethers.getContractFactory('UpgradeableTokenV2');
     console.log(PROXY);
     
-    await upgrades.upgradeProxy(PROXY, PizzaV2);
+    await upgrades.upgradeProxy(PROXY, UpgradeableTokenV2);
 
-    console.log('Pizza upgraded successfully');
+    console.log('UpgradeableToken upgraded successfully');
 }
 
 main()
