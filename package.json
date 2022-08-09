@@ -11,7 +11,8 @@
     "deploy:ropsten": "npx hardhat run --network ropsten",
     "deploy:mumbai": "npx hardhat run --network mumbai",
     "deploy:baobab": "npx hardhat run --network baobab",
-    "verify:ropsten": "npx hardhat verify --network ropsten --contract",
+    "verify:ropsten": "npx hardhat verify --network ropsten",
+    "verify:mumbai": "npx hardhat verify --network mumbai",
     "test": "npx hardhat test"
   },
   "keywords": [],
@@ -43,6 +44,7 @@
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
+    "@chainlink/contracts": "^0.4.2",
     "@openzeppelin/contracts": "^4.5.0",
     "base64-sol": "^1.1.0"
   }
